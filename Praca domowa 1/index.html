@@ -1,79 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>6BM</title>
+        <title>6BM - Oficjalna strona zespołu</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
     <body>
-        <header>
-            <h1>
-                <img src="../photos/logo.png" alt="logo">
+        <header class="page-header">
+            <h1 class="page-logo">
+                <img src="../photos/logo.png" alt="band logo">
             </h1>
-            <nav>
-                <ul>
-                    <li>
+            <nav class="page-menu">
+                <ul class="page-menu__items">
+                    <li class="page-menu__item">
                         <a href="#home">HOME</a>
                     </li>
-                    <li>
+                    <li class="page-menu__item">
                         <a href="#about">ABOUT</a>
                     </li>
-                    <li>
+                    <li class="page-menu__item">
                         <a href="#concerts">CONCERTS</a>
                     </li>
-                    <li>
+                    <li class="page-menu__item">
                         <a href="#video">VIDEO</a>
                     </li>
-                    <li>
+                    <li class="page-menu__item">
                         <a href="#photos">PHOTOS</a>
                     </li>
-                    <li>
+                    <li class="page-menu__item"></li>
                         <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section id="home">
-                <h2>
+        <main class="page-content">
+            <section id="home" class="content-section">
+                <h2 class="content-section__header">
                     HOME
                 </h2>
-                <ul>
-                    <li>
-                        <img src="../photos/band-member01.png" alt="Kamil Zgondek">
-                        <h3>KAMIL ZGONDEK</h3>
-                        <span>Keyboard</span>
+                <ul class="members-list">
+                    <li class="members-list__item">
+                        <img class="members-list__image" src="../photos/band-member01.png" alt="Photo of Kamil Zgondek - band's keyboard player">
+                        <h3 class="members-list__name">KAMIL ZGONDEK</h3>
+                        <span class="members-list__role">Keyboard</span>
                     </li>
-                    <li>
-                        <img src="../photos/band-member02.png" alt="Łukasz Furman">
-                        <h3>ŁUKASZ FURMAN</h3>
-                        <span>Vocal</span>
+                    <li class="members-list__item">
+                        <img class="members-list__image" src="../photos/band-member02.png" alt="Photo of Łukasz Furman - band's vocalist">
+                        <h3 class="members-list__name">ŁUKASZ FURMAN</h3>
+                        <span class="members-list__role">Vocal</span>
                     </li>
-                    <li>
-                        <img src="../photos/band-member03.png" alt="Kamil Majewski">
-                        <h3>KAMIL MAJEWSKI</h3>
-                        <span>Drums</span>
+                    <li class="members-list__item">
+                        <img class="members-list__image" src="../photos/band-member03.png" alt="Photo of Kamil Majewski - band's drummer">
+                        <h3 class="members-list__name">KAMIL MAJEWSKI</h3>
+                        <span class="members-list__role">Drums</span>
                     </li>
-                    <li>
-                        <img src="../photos/band-member04.png" alt="Daniel Cajzer">
-                        <h3>DANIEL CAJZER</h3>
-                        <span>Bass Guitar</span>
+                    <li class="members-list__item">
+                        <img class="members-list__image" src="../photos/band-member04.png" alt="Photo of Daniel Cajzer - band's bassist">
+                        <h3 class="members-list__name">DANIEL CAJZER</h3>
+                        <span class="members-list__role">Bass Guitar</span>
                     </li>
                 </ul>
             </section>
-            <section id="about">
-                <h2>
+            <section id="about" class="content-section about-section">
+                <h2 class="content-section__header">
                     ABOUT
                 </h2>
-                <img src="../photos/band01.jpg" alt="Band">
-                <article>
-                    <h3>STRAIGHT FROM LUBLIN</h3>
-                    <p>
+                <img class="about-section__image" src="../photos/band01.jpg" alt="Photo of all band's members">
+                <article class="about-section__description">
+                    <h3 class="about-section__description-header">STRAIGHT FROM LUBLIN</h3>
+                    <p class="about-section__description-content">
                         6MB is a young band which has it`s origins in the city of Lublin, playing music described as
                         electrorock.
-                        Band members aim to convey emotions, reflexion but also hope.
-                    </p>
-                    <p>
+                        Band members aim to convey emotions, reflexion but also hope. <br />
                         They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even
                         drum'n'bass. <br />
                         As for now they released their debut EP - TRINITY and they started working on their first full
@@ -81,138 +79,122 @@
                     </p>
                 </article>
             </section>
-            <section id="concerts">
-                <h2>
+            <section id="concerts" class="content-section">
+                <h2 class="content-section__header">
                     CONCERTS
                 </h2>
-                <div>
-                    <article>
-                        <img src="../photos/band02_WiechnikMarcin.jpg" alt="Koncert">
-                        <div>
-                            <div>
-                                <time datetime="2018-12-20">20.12.2018</time>
-                            </div>
-                            <div>
-                                <span>Lublin, klub XXX</span>
-                            </div>
-                            <button>BUY TICKET</button>
+                <div class="concerts">
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="../photos/band02_WiechnikMarcin.jpg" alt="Koncert">
+                        <div class="concerts__description">
+                            <time class="concerts__time" datetime="2018-12-20">20.12.2018</time>
+                            <span class="concerts__location" >Lublin, klub XXX</span>
+                            <button class="button">BUY TICKET</button>
                         </div>
                     </article>
-                    <article>
-                        <img src="../photos/band03_WiechnikMarcin.jpg" alt="Koncert">
-                        <div>
-                            <div>
-                                <time datetime="2018-12-20">20.12.2018</time>
-                            </div>
-                            <div>
-                                <span>Warszawa, klub YYY</span>
-                            </div>
-                            <button>BUY TICKET</button>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="../photos/band03_WiechnikMarcin.jpg" alt="Koncert">
+                        <div class="concerts__description">
+                            <time class="concerts__time" datetime="2018-12-20">20.12.2018</time>
+                            <span class="concerts__location" >Warszawa, klub YYY</span>
+                            <button class="button">BUY TICKET</button>
                         </div>
                     </article>
-                    <article>
-                        <img src="../photos/band04_JakubBodys.jpg" alt="Koncert">
-                        <div>
-                            <div>
-                                <time datetime="2018-12-20">20.12.2018</time>
-                            </div>
-                            <div>
-                                Kraków, klub ZZZ
-                            </div>
-                            <button>BUY TICKET</button>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="../photos/band04_JakubBodys.jpg" alt="Koncert">
+                        <div class="concerts__description">
+                            <time class="concerts__time" datetime="2018-12-20">20.12.2018</time>
+                            <span class="concerts__location" >Kraków, klub ZZZ</span>
+                            <button class="button">BUY TICKET</button>
                         </div>
                     </article>
-                    <article>
-                        <img src="../photos/band05_JakubBodys.jpg" alt="Koncert">
-                        <div>
-                            <div>
-                                <time datetime="2018-12-20">20.12.2018</time>
-                            </div>
-                            <div>
-                                <span>Poznań, klub AAA</span>
-                            </div>
-                            <button>BUY TICKET</button>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="../photos/band05_JakubBodys.jpg" alt="Koncert">
+                        <div class="concerts__description">
+                            <time class="concerts__time" datetime="2018-12-20">20.12.2018</time>
+                            <span class="concerts__location" >Poznań, klub AAA</span>
+                            <button class="button">BUY TICKET</button>
                         </div>
                     </article>
                 </div>
             </section>
-            <section id="video">
-                <h2>
+            <section id="video" class="content-section">
+                <h2 class="content-section__header">
                     VIDEO
                 </h2>
-                <div>
+                <div class="video">
                     <iframe width="420" height="315" src="https://youtu.be/AstRXh-vKNI"></iframe>
                 </div>
             </section>
-            <section id="photos">
-                <h2>
+            <section id="photos" class="content-section">
+                <h2 class="content-section__header">
                     PHOTOS
                 </h2>
-                <ul>
-                    <li>
-                        <img src="../photos/band05_JakubBodys.jpg" alt="Band">
+                <ul class="photo-gallery">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band05_JakubBodys.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band06_JakubBodys.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band06_JakubBodys.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band07.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band07.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band08.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band08.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band09.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band09.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band10.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band10.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band11.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band11.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos/band04_JakubBodys.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos/band04_JakubBodys.jpg" alt="Band">
                     </li>
-                    <li>
-                        <img src="../photos//band03_WiechnikMarcin.jpg" alt="Band">
+                    <li class="photo-gallery__item">
+                        <img class="photo-gallery__image" src="../photos//band03_WiechnikMarcin.jpg" alt="Band">
                     </li>
                 </ul>
             </section>
-            <section id="contact">
-                <h2>
+            <section id="contact" class="content-section contact-section">
+                <h2 class="content-section__header">
                     CONTACT
                 </h2>
-                <img src="../photos/band12.jpg" alt="Band">
-                <address>
+                <img class="contact-section__image" src="../photos/band12.jpg" alt="Band">
+                <address class="contact-section__address">
                     <p>Tel: 00 48 999 00 00</p>
                     <p>e-mail: 6bmband@mail.mail</p>
                 </address>
-                <form>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="text" id="email" />
+                <form class="form">
+                    <div class="form__field">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" type="text" id="email" />
                     </div>
-                    <div>
-                        <label for="topic">Topic</label>
-                        <input type="text" id="topic" />
+                    <div class="form__field">
+                        <label class="form__label" for="topic">Topic</label>
+                        <input class="form__input" type="text" id="topic" />
                     </div>
-                    <button type="submit">CONTACT US!</button>
+                    <button class="button" type="submit">CONTACT US!</button>
                 </form>
             </section>
         </main>
-        <footer>
-            <ul>
-                <li>
-                    <a href="#"><img src="../photos/fb.svg" alt="facebook"></a>
+        <footer class="page-footer">
+            <ul class="media-menu">
+                <li class="media-menu__item">
+                    <a class="media-menu__link" href="#"><img src="../photos/fb.svg" alt="facebook logo"></a>
                 </li>
-                <li>
-                    <a href="#"><img src="../photos/insta.svg" alt="instagram"></a>
+                <li class="media-menu__item">
+                    <a class="media-menu__link" href="#"><img src="../photos/insta.svg" alt="instagram logo"></a>
                 </li>
-                <li>
-                    <a href="#"><img src="../photos/last.svg" alt="last.fm"></a>
+                <li class="media-menu__item">
+                    <a class="media-menu__link" href="#"><img src="../photos/last.svg" alt="last.fm logo"></a>
                 </li>
-                <li>
-                    <a href="#"><img src="../photos/yout.svg" alt="youtube"></a>
+                <li class="media-menu__item">
+                    <a class="media-menu__link" href="#"><img src="../photos/yout.svg" alt="youtube logo"></a>
                 </li>
             </ul>
         </footer>
