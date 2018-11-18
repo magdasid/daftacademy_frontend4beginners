@@ -125,27 +125,25 @@ h3 {
     width: 950px; 
 }
 .photo-gallery__item {
+    padding-bottom: 0.5%;
     flex: 1 1 300px;
 }
 .photo-gallery__image {
     width: 300px;
     border-top: 3px solid  #ec008c;
 }
-.contact-section__image {
-    position: relative;
-    left: 15%;
+.contact-section {
+    margin-left: 6%;
 }
 .contact-section__address {
     position: relative;
-    left: 60%;
-    bottom: 25%;
+    left: 50%;
+    bottom: 30%;
     color: #CCC8FF;
-    width: 15%;
 }
 .form {
-    position: relative;
-    left: 15%; 
-    width: 50%; 
+    padding: 0;
+    color: #CCC8FF;
 }
 /* Footer Styles */
 .page-footer {
