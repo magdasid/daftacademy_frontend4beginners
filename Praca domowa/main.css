@@ -179,14 +179,14 @@ ul {
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 66vw; 
+    width: 65vw; 
 }
 .photo-gallery__item {
     padding-bottom: 1%;
-    flex: 1 1 20vw;
+    flex: 1 1 19vw;
 }
 .photo-gallery__image {
-    width: 20vw;
+    width: 19vw;
     border-top: 3px solid  #ec008c;
 }
 .contact-section {
