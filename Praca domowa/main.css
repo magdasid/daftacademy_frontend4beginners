@@ -59,6 +59,9 @@ ul {
 }
 .content-section {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .page-content {
     margin-left: 220px;
@@ -124,6 +127,7 @@ ul {
     letter-spacing: 1.5px;
 }
 .concerts {
+    width: 750px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -173,6 +177,7 @@ ul {
     width: 300px;
     border-top: 3px solid  #ec008c;
 }
+/*
 .contact-section {
     margin-left: 6%;
 }
