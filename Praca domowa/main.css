@@ -127,7 +127,7 @@ ul {
     letter-spacing: 1.5px;
 }
 .concerts {
-    width: 750px;
+    width: 60vw;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
