@@ -19,6 +19,17 @@ ul {
     margin: 0;
     padding: 0;
 }
+.button {
+    width: 105px;
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.1);
+    color:#CCC8FF;
+    border-radius: 3px;
+    border: none;
+    
+}
 /* Page Header Styles */
 .page-header {
     position: fixed;
@@ -26,8 +37,7 @@ ul {
     left: 50px;
 }
 .content-section__header {
-    margin-bottom: 5%;
-    padding: 5% 0 3% 0;
+    margin: 7.5% 0 4% 0;
     height: 28px;
     color: #ec008c;
 }
@@ -87,79 +97,78 @@ ul {
 }
 .about-section__image {
     border-top: 3px solid #ec008c;
-    width: 700px;
+    width: 790px;
     z-index: 1;
 } 
 .about-section__description {
-    width: 350px;
+    width: 395px;
+    height: 365;
     position: relative;
-    bottom: 210px;
-    right: 610px;
+    bottom: 245px;
+    right: 690px;
     text-align: left;
     z-index: 2;
     background-color: #25072e;
     border-bottom: 3px solid #ec008c;
-    padding: 2% 3% 4% 3%;
+    padding: 45px 35px;
 }
-.about-section__description-header {
-    padding: 2% 0;
+.about-section__description-content {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #CCC8FF;
 }
-.about-section__description-content, 
 .about-section__description-header  {
     color: #CCC8FF;
-    font-size: 13px;
+    font-size: 15px;
+    padding: 2% 0;
+    letter-spacing: 1.5px;
 }
 .concerts {
-    margin-left: 20%;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin-left: 20%;
 }
-
 .concerts__item {
     padding: 1% 0 1% 5%;
-    flex: 1 1 50%;
+    flex: 1 1 25vw;
 }
-
 .concerts__image {
     width: 100%;
     border-bottom: 3px solid  #ec008c;
 }
-
 .concerts__description {
-    text-align: left;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
     color: #CCC8FF;
     height: 50px;
 }
 .concerts__time, 
 .concerts__location{
-    width: 70%;
+    width: 60%;
 }
-.concerts__description button {
-    width: 30%;
+.concerts__button-wrapper {
+    width: 40%;
+    text-align: right;
 }
 .video iframe {
-    width: 65vw;
+    width: 65vw;;
     height: 60vh;
     border-top: 3px solid  #ec008c;
 }
-/*
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    right: 3%;
     width: 950px; 
 }
 .photo-gallery__item {
     padding-bottom: 0.5%;
-    flex: 1 1 300px;
+    flex: 1 1 310px;
 }
 .photo-gallery__image {
     width: 300px;
