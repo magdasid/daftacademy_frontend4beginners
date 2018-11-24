@@ -189,16 +189,14 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: flex-end;
     align-items: center;
-    width: 100%;
+    width: 85%;
 }
 .contact-section__image {
     width: 465px;
 }
 .contact-section__address {
-    width: 210px;
-    margin: 0 5% 0 80px;
+    margin-left: 80px;
     color: #CCC8FF;
     font-size: 13px;
     text-align: left;
