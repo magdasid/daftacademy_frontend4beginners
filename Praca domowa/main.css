@@ -167,14 +167,14 @@ ul {
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 950px; 
+    width: 66vw; 
 }
 .photo-gallery__item {
-    padding-bottom: 0.5%;
-    flex: 1 1 310px;
+    padding-bottom: 1%;
+    flex: 1 1 20vw;
 }
 .photo-gallery__image {
-    width: 300px;
+    width: 20vw;
     border-top: 3px solid  #ec008c;
 }
 /*
