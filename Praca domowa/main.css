@@ -73,11 +73,13 @@ ul {
 .members-list {
     height: 100vh;
     display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
     color: #CCC8FF;
 }
 .members-list__item {
+
     margin-left: 2.5%;
     text-align: left;
 }
@@ -132,6 +134,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 .concerts__item {
     padding: 1% 0 1% 5%;
@@ -186,16 +189,16 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: flex-start;
+    justify-items: flex-end;
     align-items: center;
-    width: 70vw;
+    width: 100%;
 }
 .contact-section__image {
     width: 465px;
 }
 .contact-section__address {
     width: 210px;
-    margin: 0 120px 0 80px;
+    margin: 0 5% 0 80px;
     color: #CCC8FF;
     font-size: 13px;
     text-align: left;
@@ -215,7 +218,7 @@ ul {
     flex-direction: column;
 }
 .form__label {
-    padding: 2% 0 2% 0;
+    padding: 1% 0 1% 0;
 }
 .form__input {
     width: 300px;
