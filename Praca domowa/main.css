@@ -103,15 +103,15 @@ ul {
 }
 .about-section__image {
     border-top: 3px solid #ec008c;
-    width: 790px;
+    width: 700px;
     z-index: 1;
 } 
 .about-section__description {
     width: 395px;
-    height: 365;
+    height: 365px;
     position: relative;
-    bottom: 245px;
-    right: 690px;
+    bottom: 220px;
+    right: 610px;
     text-align: left;
     z-index: 2;
     background-color: #25072e;
@@ -190,6 +190,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
     width: 85%;
 }
 .contact-section__image {
