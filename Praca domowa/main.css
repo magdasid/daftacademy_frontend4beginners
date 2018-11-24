@@ -79,7 +79,6 @@ ul {
     color: #CCC8FF;
 }
 .members-list__item {
-
     margin-left: 2.5%;
     text-align: left;
 }
@@ -120,6 +119,7 @@ ul {
 }
 .about-section__description-content {
     font-size: 13px;
+    opacity: 0.8;
     letter-spacing: 1.5px;
     color: #CCC8FF;
 }
@@ -155,8 +155,16 @@ ul {
     color: #CCC8FF;
     height: 50px;
 }
+.concerts__time {
+    font-weight: bold;
+}
+.concerts__location {
+    opacity: 0.8;
+}
 .concerts__time, 
 .concerts__location{
+    font-size: 13px;
+    letter-spacing: 3.5px;
     width: 60%;
 }
 .concerts__button-wrapper {
