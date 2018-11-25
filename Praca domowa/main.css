@@ -29,7 +29,6 @@ ul {
     color:#CCC8FF;
     border-radius: 3px;
     border: none;
-    
 }
 /* Page Header Styles */
 .page-header {
@@ -59,27 +58,28 @@ ul {
     display: none;
 }
 .content-section {
+    width: 100%;
+    max-width: 1200px;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    margin: 0 auto;
+    padding: 2% 4% 2% 0%;
+    text-align: right;
 }
 .page-content {
-    margin-left: 220px;
-    padding: 0 5%;
+    width: 80%;
+    margin-left: 20%;
     text-align: right;
 }
 /* Member List Styles */
 .members-list {
-    height: 100vh;
     display: flex;
-    align-self: center;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #CCC8FF;
+    margin-top: 20vh;
 }
 .members-list__item {
-    margin-left: 2.5%;
     text-align: left;
 }
 .members-list__name {
@@ -130,15 +130,17 @@ ul {
     letter-spacing: 1.5px;
 }
 .concerts {
-    width: 60vw;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
+    padding-left: 15%;
 }
 .concerts__item {
-    padding: 1% 0 1% 5%;
-    width: 27vw;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    width: 50%;
 }
 .concerts__image {
     width: 100%;
@@ -149,11 +151,16 @@ ul {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     width: 100%;
     color: #CCC8FF;
     height: 50px;
+}
+.concerts__date-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
 }
 .concerts__time {
     font-weight: bold;
@@ -163,30 +170,35 @@ ul {
 }
 .concerts__time, 
 .concerts__location{
+    display: block;
     font-size: 13px;
     letter-spacing: 3.5px;
-    width: 60%;
+    width: 100%;
 }
 .concerts__button-wrapper {
     width: 40%;
     text-align: right;
 }
+.video {
+    width: 100%;
+}
 .video iframe {
-    width: 64vw; 
-    height: 60vh;
+    width: 85%;
+    height: 70vh;
     border-top: 3px solid  #ec008c;
 }
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 65vw; 
+    width: 100%; 
+    padding-left: 10%;
 }
 .photo-gallery__item {
-    padding-bottom: 1%;
-    flex: 1 1 19vw;
+    width: 33.33%;
+    padding: 2px 0 0 6px;
 }
 .photo-gallery__image {
-    width: 19vw;
+    width: 100%;
     border-top: 3px solid  #ec008c;
 }
 .contact-section {
@@ -202,10 +214,11 @@ ul {
     width: 85%;
 }
 .contact-section__image {
-    width: 465px;
+    width: 60%;
 }
 .contact-section__address {
-    margin-left: 80px;
+    width: 40%;
+    padding-left: 60px;
     color: #CCC8FF;
     font-size: 13px;
     text-align: left;
