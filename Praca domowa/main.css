@@ -93,7 +93,7 @@ ul {
     opacity: 0.5;
 }
 .members-list__image{
-   height: 40vh;
+   height: 35vh;
 }
 .about-section {
     display: flex;
@@ -141,6 +141,7 @@ ul {
     padding-bottom: 20px;
     padding-left: 35px;
     width: 50%;
+    min-width: 250px;
 }
 .concerts__image {
     width: 100%;
@@ -196,6 +197,7 @@ ul {
 .photo-gallery__item {
     width: 33.33%;
     padding: 2px 0 0 6px;
+    min-width: 250px;
 }
 .photo-gallery__image {
     width: 100%;
@@ -257,7 +259,6 @@ ul {
     bottom: 50px;
     left: 50px;
 }
-
 .media-menu {
     padding-left: 0;
     color: #ec008c;
@@ -270,3 +271,90 @@ ul {
 .media-menu__item img {
     height: 18px;
 }
+
+@media only screen and (max-width : 768px) {
+    .page-header {
+        position: static;
+        padding: 3%;
+        text-align: center;
+    }
+    .page-logo {
+        margin-bottom: 3%;
+    }
+    .page-content {
+        width: 100%;
+        margin: 0;
+    }
+    .content-section {
+        padding: 3% 3%;
+    }
+    .content-section__header {
+        margin: 7.5% 0;
+    }
+    .about-section__image {
+        width: 100%;
+    }
+    .about-section__description {
+        padding: 20px;
+        width: 100%;
+        position: static;
+    }
+    .members-list {
+        margin-top: 20px;
+    }
+    .members-list__item {
+        text-align: center;
+        padding: 2%;
+    }
+    .members-list__name, 
+    .members-list__role {
+        text-align: center;
+    }
+    .concerts {
+        padding: 0;
+    }
+    .concerts__item {
+        width: 100%;
+        padding-left: 0; 
+    }
+    .video iframe {
+        width: 100%;
+        height: 40%;
+    }
+    .photo-gallery {
+        padding: 0;
+    }
+    .photo-gallery__item {
+        width: 100%;
+        padding: 0;
+    }
+    /* Contact Styles */
+    .contact-section__info {
+        width: 100%;
+    }
+    .contact-section__image, 
+    .contact-section__address {
+        width: 100%; 
+        padding: 0;
+    }
+    .form__input {
+        width: 100%;
+    }
+    .page-footer {
+        position: static;
+        text-align: center;
+    }
+    .media-menu__item {
+        display: inline-block;
+        padding: 3%;
+    } 
+    .media-menu__item img {
+        height: 30px;
+    }
+    
+
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    /* Styles */
+}
+
