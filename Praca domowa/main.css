@@ -31,15 +31,15 @@ ul {
     border: none;
 }
 .button:hover {
-  background-color: rgba(204, 200, 255, 0.5);
+    background-color: rgba(204, 200, 255, 0.5);
 }
 .button:focus {
-  background-color: rgba(204, 200, 255, 0.5);
-  border: 1px solid #CCC8FF;
+    background-color: rgba(204, 200, 255, 0.5);
+    border: 1px solid #CCC8FF;
 }
 .button:disabled {
-  color:#CCC8FF;
-  opacity: 0.1;
+    color:#CCC8FF;
+    opacity: 0.1;
 }
 /* Page Header Styles */
 .page-header {
@@ -66,16 +66,16 @@ ul {
     text-decoration-style: none;
 }
 .page-menu__link:hover {
-  opacity: 1;
+    opacity: 1;
 }
 .page-menu__link:active {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 .page-menu__link:focus {
-  opacity: 1;
+    opacity: 1;
 }
 .page-menu__link:disabled {
-  opacity: 0.4;
+    opacity: 0.4;
 }
 /* Page Content Styles */
 .screen-reader-only {
@@ -241,8 +241,8 @@ ul {
     border-top: 3px solid  #ec008c;
 }
 .photo-gallery__image:hover {
-  transition-duration: 1s;
- transform: scale(1.1);
+    transition-duration: 1s;
+    transform: scale(1.1);
 }
 .contact-section {
     display: flex;
@@ -314,16 +314,16 @@ ul {
     opacity: 0.8;
 }
 .media-menu__photo:hover {
-  opacity: 1;
+    opacity: 1;
 }
 .media-menu__photo:active {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 .media-menu__photo:focus {
-  opacity: 1;
+    opacity: 1;
 }
 .media-menu__photo:disabled {
-  opacity: 0.4;
+    opacity: 0.4;
 }
 
 @media only screen and (max-width : 768px) {
@@ -380,6 +380,9 @@ ul {
     .photo-gallery__item {
         width: 100%;
         padding: 0;
+    }
+    .photo-gallery__image {
+        width: 100%;
     }
     /* Contact Styles */
     .contact-section__info {
