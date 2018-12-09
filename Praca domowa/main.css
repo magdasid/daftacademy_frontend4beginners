@@ -30,6 +30,17 @@ ul {
     border-radius: 3px;
     border: none;
 }
+.button:hover {
+  background-color: rgba(204, 200, 255, 0.5);
+}
+.button:focus {
+  background-color: rgba(204, 200, 255, 0.5);
+  border: 1px solid #CCC8FF;
+}
+.button:disabled {
+  color:#CCC8FF;
+  opacity: 0.1;
+}
 /* Page Header Styles */
 .page-header {
     position: fixed;
@@ -45,15 +56,28 @@ ul {
     padding: 4px;
 }
 /* Page Menu Styles */
-.page-menu__item a {
+.page-menu__link {
     text-decoration: none;
-    color: #ec008c;
+    color: #ef008c;
+    opacity: 0.8;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 6.7px;
     text-decoration-style: none;
-} 
-/* Page Content Styles */ 
+}
+.page-menu__link:hover {
+  opacity: 1;
+}
+.page-menu__link:active {
+  opacity: 0.6;
+}
+.page-menu__link:focus {
+  opacity: 1;
+}
+.page-menu__link:disabled {
+  opacity: 0.4;
+}
+/* Page Content Styles */
 .screen-reader-only {
     display: none;
 }
@@ -84,17 +108,28 @@ ul {
     padding: 0 10px;
 }
 .members-list__name {
+    opacity: 0;
     margin-top: 30px;
     font-size: 15px;
     letter-spacing: 3.8px;
 }
 .members-list__role {
+    opacity: 0;
     font-size: 13px;
     letter-spacing: 3.5px;
-    opacity: 0.5;
 }
 .members-list__image{
-   height: 35vh;
+    opacity: 0.4;
+    height: 35vh;
+}
+.members-list__item:hover .members-list__image{
+    opacity: 1;
+}
+.members-list__item:hover .members-list__name{
+    opacity: 1;
+}
+.members-list__item:hover .members-list__role{
+    opacity: 0.8;
 }
 .about-section {
     display: flex;
@@ -105,7 +140,7 @@ ul {
     border-top: 3px solid #ec008c;
     width: 700px;
     z-index: 1;
-} 
+}
 .about-section__description {
     width: 395px;
     height: 365px;
@@ -170,7 +205,7 @@ ul {
 .concerts__location {
     opacity: 0.8;
 }
-.concerts__time, 
+.concerts__time,
 .concerts__location{
     display: block;
     font-size: 13px;
@@ -193,17 +228,21 @@ ul {
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 100%; 
-    padding-left: 10%;
+    width: 100%;
+    padding-left: 15%;
 }
 .photo-gallery__item {
-    width: 33.33%;
-    padding: 2px 0 0 6px;
+    width: 33.3%;
+    padding: 10px 0 0 10px;
     min-width: 250px;
 }
 .photo-gallery__image {
-    width: 100%;
+    width: 90%;
     border-top: 3px solid  #ec008c;
+}
+.photo-gallery__image:hover {
+  transition-duration: 1s;
+ transform: scale(1.1);
 }
 .contact-section {
     display: flex;
@@ -234,7 +273,7 @@ ul {
     margin-top: 45px;
     padding: 0;
     color: #CCC8FF;
-} 
+}
 .form__field {
     font-size: 13px;
     opacity: 0.8;
@@ -269,9 +308,22 @@ ul {
 }
 .media-menu__item {
     padding: 4px;
-} 
-.media-menu__item img {
+}
+.media-menu__photo {
     height: 18px;
+    opacity: 0.8;
+}
+.media-menu__photo:hover {
+  opacity: 1;
+}
+.media-menu__photo:active {
+  opacity: 0.6;
+}
+.media-menu__photo:focus {
+  opacity: 1;
+}
+.media-menu__photo:disabled {
+  opacity: 0.4;
 }
 
 @media only screen and (max-width : 768px) {
@@ -308,7 +360,7 @@ ul {
         text-align: center;
         padding: 2%;
     }
-    .members-list__name, 
+    .members-list__name,
     .members-list__role {
         text-align: center;
     }
@@ -317,7 +369,7 @@ ul {
     }
     .concerts__item {
         width: 100%;
-        padding-left: 0; 
+        padding-left: 0;
     }
     .video iframe {
         width: 100%;
@@ -333,9 +385,9 @@ ul {
     .contact-section__info {
         width: 100%;
     }
-    .contact-section__image, 
+    .contact-section__image,
     .contact-section__address {
-        width: 100%; 
+        width: 100%;
         padding: 0;
     }
     .form__input {
@@ -348,8 +400,8 @@ ul {
     .media-menu__item {
         display: inline-block;
         padding: 3%;
-    } 
-    .media-menu__item img {
+    }
+    .media-menu__photo {
         height: 30px;
     }
 }
@@ -372,17 +424,16 @@ ul {
     .concerts__item {
         width: 48%;
         padding: 1%;
-        padding-left: 0; 
+        padding-left: 0;
     }
     .photo-gallery__item {
         width: 50%;
         padding: 1%;
     }
     .contact-section__image {
-        width: 60%; 
+        width: 60%;
     }
     .form__input {
         width: 60%;
     }
 }
-
